@@ -26,3 +26,8 @@ vim.keymap.set('n', '<C-Left>', require('smart-splits').move_cursor_left)
 vim.keymap.set('n', '<C-Down>', require('smart-splits').move_cursor_down)
 vim.keymap.set('n', '<C-Up>', require('smart-splits').move_cursor_up)
 vim.keymap.set('n', '<C-Right>', require('smart-splits').move_cursor_right)
+
+local wk = require("which-key")
+wk.add({
+  { "<leader>h", "<cmd>:HexToggle<cr><cr>", desc = "Toggle hex" },
+})
