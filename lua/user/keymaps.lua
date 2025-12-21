@@ -31,3 +31,7 @@ local wk = require("which-key")
 wk.add({
   { "<leader>h", "<cmd>:HexToggle<cr><cr>", desc = "Toggle hex" },
 })
+
+vim.api.nvim_set_keymap('v', '<F3>', ':<c-u>HSHighlight 2<cr>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<F4>', ':<c-u>HSRmHighlight rm_all<cr>', { noremap = true, silent = true })
+
